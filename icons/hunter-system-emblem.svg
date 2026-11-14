@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" fill="none">
+  <title>HUNTER SYSTEM emblem</title>
+  <defs>
+    <linearGradient id="background" x1="66" y1="44" x2="455" y2="473" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#101D30"/>
+      <stop offset=".52" stop-color="#07111F"/>
+      <stop offset="1" stop-color="#03070D"/>
+    </linearGradient>
+    <radialGradient id="core" cx="0" cy="0" r="1" gradientTransform="matrix(0 229 -190 0 256 242)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00DDF5" stop-opacity=".17"/>
+      <stop offset="1" stop-color="#00DDF5" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cyan" x1="136" y1="93" x2="380" y2="418" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8AFBFF"/>
+      <stop offset=".44" stop-color="#00E5FF"/>
+      <stop offset="1" stop-color="#1687FF"/>
+    </linearGradient>
+    <filter id="glow" x="66" y="58" width="380" height="400" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="softGlow" x="124" y="104" width="264" height="320" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="15"/>
+    </filter>
+  </defs>
+
+  <rect width="512" height="512" fill="#03070D"/>
+  <rect width="512" height="512" rx="116" fill="url(#background)"/>
+  <rect x="2" y="2" width="508" height="508" rx="114" stroke="#2CEFFF" stroke-opacity=".14" stroke-width="2"/>
+  <rect width="512" height="512" rx="116" fill="url(#core)"/>
+  <path d="M256 72 389 130v105c0 93-52 158-133 205-81-47-133-112-133-205V130L256 72Z" fill="#071321" fill-opacity=".64" stroke="url(#cyan)" stroke-width="3"/>
+  <path d="M256 89 374 140v94c0 82-44 140-118 185-74-45-118-103-118-185v-94l118-51Z" stroke="#55F4FF" stroke-opacity=".26" stroke-width="1.5"/>
+  <path d="M256 112c-53 0-94 56-94 128s41 128 94 128 94-56 94-128-41-128-94-128Z" stroke="#00E5FF" stroke-opacity=".25" stroke-width="20" filter="url(#softGlow)"/>
+
+  <g filter="url(#glow)" stroke="url(#cyan)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M256 126c-47 0-83 51-83 114s36 114 83 114 83-51 83-114-36-114-83-114Z" stroke-width="3"/>
+    <path d="M256 147c-36 0-64 42-64 93s28 93 64 93 64-42 64-93-28-93-64-93Z" stroke-opacity=".44" stroke-width="2"/>
+    <path d="M176 192c-8 19-12 39-12 60 0 22 4 42 12 60M336 192c8 19 12 39 12 60 0 22-4 42-12 60" stroke-width="2"/>
+    <path d="M193 174 178 159M319 174l15-15M193 330l-15 15M319 330l15 15" stroke-width="2"/>
+  </g>
+
+  <path d="M205 184v142M307 184v142M205 251h23l28-25 28 25h23" stroke="#03101A" stroke-width="28" stroke-linecap="square" stroke-linejoin="miter"/>
+  <path d="M205 184v142M307 184v142M205 251h23l28-25 28 25h23" stroke="#00E5FF" stroke-width="13" stroke-linecap="square" stroke-linejoin="miter" filter="url(#glow)"/>
+  <path d="m256 207 14 14-14 14-14-14 14-14Z" fill="#07111F" stroke="#8AFBFF" stroke-width="3"/>
+  <path d="m256 374 13 13-13 13-13-13 13-13Z" fill="#06101B" stroke="url(#cyan)" stroke-width="3"/>
+
+  <path d="m256 98 7 7-7 7-7-7 7-7ZM137 139l6 6-6 6-6-6 6-6ZM375 139l6 6-6 6-6-6 6-6Z" fill="#8AFBFF"/>
+  <path d="M115 224h24M373 224h24M133 322h22M357 322h22" stroke="#00E5FF" stroke-opacity=".75" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="137" cy="224" r="3" fill="#8AFBFF"/>
+  <circle cx="375" cy="224" r="3" fill="#8AFBFF"/>
+</svg>
