@@ -5,18 +5,24 @@
   "type": "module",
   "homepage": "https://orion-feroriajsc.github.io/slHabitTraker.github.io",
   "scripts": {
+    "predev": "node scripts/generate-tabler-assets.mjs",
     "dev": "vite",
+    "prebuild": "node scripts/generate-tabler-assets.mjs",
     "build": "vite build",
+    "test:tabler-icons": "node scripts/verify-tabler-icon-integrations.mjs",
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "@supabase/supabase-js": "^2.57.0",
+    "@supabase/supabase-js": "^2.119.0",
+    "@tabler/icons": "3.52.0",
+    "@tabler/icons-vue": "^3.52.0",
     "lucide-react": "^0.468.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "recharts": "^2.15.0"
+    "recharts": "^2.15.0",
+    "vue": "^3.5.45"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.3.4",
