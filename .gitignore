@@ -4,3 +4,4 @@ public/tabler-icons/
 .env
 .env.*
 !.env.example
+!backend/.env.example
